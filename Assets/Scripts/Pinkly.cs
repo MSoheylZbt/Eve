@@ -13,6 +13,7 @@ public class Pinkly : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        managerRef.ActiveNextPinkly();
+        if(collision.CompareTag("Player"))
+            managerRef.ActiveNextPinkly();
     }
 }

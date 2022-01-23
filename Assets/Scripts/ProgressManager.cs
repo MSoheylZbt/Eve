@@ -33,6 +33,10 @@ public class ProgressManager : MonoBehaviour
     {
         pinklies[currentIndex].gameObject.SetActive(false);
         currentIndex++;
+
+        if (currentIndex >= pinklies.Count)
+            return;
+
         pinklies[currentIndex].gameObject.SetActive(true);
 
         ShowNextDialogue();
