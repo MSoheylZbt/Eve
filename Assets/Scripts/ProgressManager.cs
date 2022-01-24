@@ -6,6 +6,7 @@ public class ProgressManager : MonoBehaviour
 {
     [SerializeField] List<Pinkly> pinklies;
     [SerializeField] List<Sprite> dialogueSprites;
+    [SerializeField] List<GameObject> levelPrefabs;
 
     [SerializeField] SpriteRenderer dialoguBox;
     [SerializeField] float dialogueTimer = 2f;
@@ -29,19 +30,25 @@ public class ProgressManager : MonoBehaviour
         }
     }
 
-    public void ActiveNextPinkly()
+    public void DoProgress()
+    {
+        ActiveLevelNextPrefab();
+        ActiveNextPinkly();
+        ShowNextDialogue();
+    }
+
+    private void ActiveNextPinkly()
     {
         pinklies[currentIndex].gameObject.SetActive(false);
-        currentIndex++;
+
+
+        currentIndex++; //Side-effect
 
         if (currentIndex >= pinklies.Count)
             return;
 
         pinklies[currentIndex].gameObject.SetActive(true);
-
-        ShowNextDialogue();
     }
-
 
     private void ShowNextDialogue()
     {
@@ -62,4 +69,11 @@ public class ProgressManager : MonoBehaviour
 
         dialoguBox.gameObject.SetActive(false);
     }
+
+    private void ActiveLevelNextPrefab()
+    {
+        levelPrefabs[currentIndex].SetActive(true);
+    }
+
+
 }
