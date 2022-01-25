@@ -134,4 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d82767076ca5b45ba44ef72044c633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneIndex: 1
+  nextSceneIndex: 3
+  speed: 2
+  wall: {fileID: 0}
+  whiteNextPos: {fileID: 0}
+  white: {fileID: 0}
