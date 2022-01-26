@@ -1872,9 +1872,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1911414309}
     - target: {fileID: 4043589036156867702, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
+      propertyPath: dialogueSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: eec01336a109723409419ba945bd250a, type: 3}
+    - target: {fileID: 4043589036156867702, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
+      propertyPath: dialogueSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1f3e1d0d96b3c4c448b4a8bb406b1e25, type: 3}
+    - target: {fileID: 4043589036156867702, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
       propertyPath: dialogueSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300000, guid: 6936035a0d349ba4cafdacddee695e90, type: 3}
+      objectReference: {fileID: 21300000, guid: b38054b413cee4d47865c56f66f374c1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
 --- !u!1001 &1322809898
@@ -1896,6 +1904,10 @@ PrefabInstance:
       propertyPath: whiteNextPos
       value: 
       objectReference: {fileID: 1436457922}
+    - target: {fileID: 1999823397920693582, guid: 4908033ed9a197047a97305f97ec5ed2, type: 3}
+      propertyPath: nextSceneIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1999823397920693582, guid: 4908033ed9a197047a97305f97ec5ed2, type: 3}
       propertyPath: walls.Array.size
       value: 4

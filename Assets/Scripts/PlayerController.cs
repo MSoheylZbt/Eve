@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
                 moveCounter++;
 
-            if (moveCounter % depressMoveCount == 0)
+            if (moveCounter != 0 && moveCounter % depressMoveCount == 0)
             {
                 targetVector.x = Input.GetAxisRaw("Horizontal");
             }
