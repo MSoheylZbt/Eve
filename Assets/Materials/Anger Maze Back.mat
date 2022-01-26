@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: noise 1
-  m_Shader: {fileID: -6465566751694194690, guid: 2634f8a5993ae804e9a9740e864d93c6, type: 3}
+  m_Name: Anger Maze Back
+  m_Shader: {fileID: -6465566751694194690, guid: c6e56c54ea72bf548995cb4cbaa54b96, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -32,12 +32,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_445c4573e7134dfbba0520cd820c79ac: 10.55
-    - Vector1_8371f3814fc94bda810e3802b78e69b0: -19.8
-    - Vector1_8ad8df3646ef47b5a30d8a290de81a48: 0.9
-    - Vector1_9e3e98a3f1dc4ee28a9c722a87ee9f16: 51.73
-    - Vector1_bc714752fa9a40f1a1b9432ac44d1e79: 0.31
-    - Vector1_d5b9c2e9c5b64f8fada0de4b3c343752: 0
+    - Vector1_445c4573e7134dfbba0520cd820c79ac: 10.5
+    - Vector1_8ad8df3646ef47b5a30d8a290de81a48: 0.85
+    - Vector1_bc714752fa9a40f1a1b9432ac44d1e79: 0.46
     m_Colors:
-    - Color_19674fed999b4b9fa9724a30d699b595: {r: 0.11399999, g: 0.11399999, b: 0.10829999, a: 1}
+    - Color_19674fed999b4b9fa9724a30d699b595: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

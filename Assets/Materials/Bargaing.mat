@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wall
+  m_Name: Bargaing
   m_Shader: {fileID: -6465566751694194690, guid: fce5f69a6da4acb45b25cc9b8d0b6e0f, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -39,10 +39,10 @@ Material:
     - Vector1_1c732ada67bd4acfaecd08fd553c6360: 0
     - Vector1_22fc5427717e42fcbe46d207d7b12213: 1
     - Vector1_2ed0ffaa5548418b83b216a2c9a7a0a8: 3
-    - Vector1_412a7f6a9834431a859615e3e693d0b3: 0.73
+    - Vector1_412a7f6a9834431a859615e3e693d0b3: 0.29
     - Vector1_445c4573e7134dfbba0520cd820c79ac: 10.55
     - Vector1_7f2e4ea1abdc4473927cb9acc11fbfab: 0.1
-    - Vector1_8ad8df3646ef47b5a30d8a290de81a48: 0.9
+    - Vector1_8ad8df3646ef47b5a30d8a290de81a48: 0.85
     - Vector1_b6f165da8e8b47a3a228decedc7ff879: 0
     - Vector1_bc714752fa9a40f1a1b9432ac44d1e79: 0.5
     m_Colors:
