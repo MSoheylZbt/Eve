@@ -6,16 +6,22 @@ using UnityEngine;
 public class AngerWall : MonoBehaviour
 {
     [SerializeField] int hitCount = 3;
-
+    [SerializeField] float forceMultiplier = 20f;
 
     bool isInside = false;
     int hitCounter = 0;
-
+    Rigidbody2D playerRB;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
+        {
             isInside = true;
+            if(!playerRB)
+            {
+                playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -30,6 +36,8 @@ public class AngerWall : MonoBehaviour
         {
             hitCounter++;
             isInside = false;
+            //Vector2 forceDir = this.transform.position - collision.gameObject.transform.position;
+            playerRB.AddForce(transform.forward * forceMultiplier);
         }
 
         if(hitCounter == hitCount)
