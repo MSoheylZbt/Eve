@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 959554094455004892}
   - component: {fileID: 959554094455004891}
-  - component: {fileID: 959554094455004890}
-  - component: {fileID: 959554094455004889}
+  - component: {fileID: 5532575962063615522}
+  - component: {fileID: 825020477151848868}
+  - component: {fileID: 5259401291028529408}
   m_Layer: 0
   m_Name: Multiple Click Wall
   m_TagString: Untagged
@@ -84,7 +85,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &959554094455004890
+--- !u!58 &5532575962063615522
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959554094455004888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.0000019073486}
+  serializedVersion: 2
+  m_Radius: 0.5000001
+--- !u!61 &825020477151848868
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,7 +127,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &959554094455004889
+--- !u!114 &5259401291028529408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +136,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 959554094455004888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7746812d6dd7664f9a092cdf4796d4a, type: 3}
+  m_Script: {fileID: 11500000, guid: a4af2e70231d22848bb9e42b876ed266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickTimeWindow: 1
+  hitCount: 3
