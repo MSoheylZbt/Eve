@@ -39,7 +39,7 @@ public class EndButton : MonoBehaviour
             StartCoroutine(MoveWhite());
             StartCoroutine(BlockFade());
             levelAnimator.SetTrigger("Out");
-            nextLevelAnimator.SetTrigger("In");
+            if (!isDepressed) nextLevelAnimator.SetTrigger("In");
         }
     }
 
