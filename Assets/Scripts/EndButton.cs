@@ -14,32 +14,52 @@ public class EndButton : MonoBehaviour
     [Header("White Parameters")]
     [SerializeField] GameObject white;
     [SerializeField] float whiteMoveSpeed;
+    [SerializeField] float blockFadeTime;
     [SerializeField] Transform whiteNextPos;
 
 
     [SerializeField] int nextSceneIndex;
     [SerializeField] GameObject wall;
+    private Animator wallAnimator;
+
+    [SerializeField] Animator levelAnimator;
+    [SerializeField] Animator nextLevelAnimator;
+
+
+    private void Start()
+    {
+        wallAnimator = wall.GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            wall.SetActive(false);
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            //gameObject.GetComponent<SpriteRenderer>().enabled = false;
             StartCoroutine(MoveWhite());
+            StartCoroutine(BlockFade());
+            levelAnimator.SetTrigger("Out");
+            nextLevelAnimator.SetTrigger("In");
         }
     }
 
+    private IEnumerator BlockFade()
+    {
+        yield return new WaitForSeconds(blockFadeTime);
+        wallAnimator.SetTrigger("FadeOut");
+    }
 
     private IEnumerator MoveWhite()
     {
+         
         while( (whiteNextPos.transform.position - white.transform.position).sqrMagnitude > Mathf.Epsilon)
         {
             white.transform.position = Vector2.MoveTowards(white.transform.position, whiteNextPos.transform.position, whiteMoveSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
+       
 
-        if(isDepressed)
+        if (isDepressed)
         {
             yield return new WaitForSeconds(2f);
             white.transform.position = new Vector3(teleportPos.position.x,teleportPos.position.y,0);
@@ -47,8 +67,8 @@ public class EndButton : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(2f);
-            SceneManager.LoadScene(nextSceneIndex);
+            
+            //SceneManager.LoadScene(nextSceneIndex);
         }
 
     }

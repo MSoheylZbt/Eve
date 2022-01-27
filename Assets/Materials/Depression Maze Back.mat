@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Depression Maze Back
+  m_Shader: {fileID: -6465566751694194690, guid: cad133efe3c91e74aae5f53af4ecf4be, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_033f338834e74af1a5d7c181fd1f95b8:
+        m_Texture: {fileID: 2800000, guid: f1152fd5718f5974a9e4d0466751704a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_48a10102a1234790bdd5658277bc7b7f:
+        m_Texture: {fileID: 2800000, guid: dfb9119c73731524ca4a9cd61de66ade, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_87226f765c804f8f9f151c0ff7ce442f:
+        m_Texture: {fileID: 2800000, guid: 728386a345dcbaa4091684e3ba0a8849, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_445c4573e7134dfbba0520cd820c79ac: 10.5
+    - Vector1_4953016829024908b9885fe7142fa9e3: 0.7
+    - Vector1_8ad8df3646ef47b5a30d8a290de81a48: 0.8
+    m_Colors:
+    - Color_19674fed999b4b9fa9724a30d699b595: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []
