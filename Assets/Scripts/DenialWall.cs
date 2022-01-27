@@ -16,7 +16,15 @@ public class DenialWall : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            animator.SetTrigger("Fade");
+            animator.SetTrigger("FadeOut");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            animator.SetTrigger("FadeIn");
         }
     }
 }
