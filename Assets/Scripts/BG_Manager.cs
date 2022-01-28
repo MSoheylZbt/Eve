@@ -8,16 +8,21 @@ public class BG_Manager : MonoBehaviour
     AudioSource audioSource;
     int currentIndex = 0;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = bgMusics[currentIndex];
-        audioSource.Play();
+        if(audioSource.isPlaying == false)
+            audioSource.Play();
     }
 
     public void PlayNextMusic()
     {
-
         audioSource.Pause();
         currentIndex++;
 

@@ -26,11 +26,12 @@ public class EndButton : MonoBehaviour
     [SerializeField] Animator nextLevelAnimator;
 
 
-    [SerializeField] BG_Manager bG_Manager;
+    BG_Manager bG_Manager;
 
     private void Start()
     {
         wallAnimator = wall.GetComponent<Animator>();
+        bG_Manager = FindObjectOfType<BG_Manager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
