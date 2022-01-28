@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7964664147498901008}
   - component: {fileID: 4074007622299738276}
   - component: {fileID: 6670318740041971857}
+  - component: {fileID: 7359552551779080154}
   m_Layer: 0
   m_Name: Eve
   m_TagString: Untagged
@@ -112,6 +113,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af55c55739285f64d8f6745e9594c764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7359552551779080154
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5163610601959196300}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf170e3395418244bab233250d23f42e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5163610602990696282
 GameObject:
   m_ObjectHideFlags: 0
