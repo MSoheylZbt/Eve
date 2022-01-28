@@ -208,7 +208,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.23078808
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -263,7 +263,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -4884879330581585456, guid: ace7fd26b2f43cf48bec1f5c1bb43aed, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 3dd4104fdf30dbc4abc14a3e035a3e00, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 092232589917b5c48ace5a1571b161b1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
