@@ -35,7 +35,7 @@ public class EndButton : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<Animator>().SetTrigger("Out");
             levelAnimator.SetTrigger("Out");
             if (!isDepressed) nextLevelAnimator.SetTrigger("In");
             StartCoroutine(MoveWhite());
@@ -58,7 +58,7 @@ public class EndButton : MonoBehaviour
             white.transform.position = Vector2.MoveTowards(white.transform.position, whiteNextPos.transform.position, whiteMoveSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
-       
+        Destroy(gameObject);
 
         if (isDepressed)
         {
