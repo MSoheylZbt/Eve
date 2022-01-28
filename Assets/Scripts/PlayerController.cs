@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     int moveCounter = 0;
 
 
+    bool isStarted = false;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -34,13 +36,32 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            targetVector.x = Input.GetAxisRaw("Horizontal");
-            targetVector.y = Input.GetAxisRaw("Vertical");
+            if(isStarted)
+            {
+                targetVector.x = Input.GetAxisRaw("Horizontal");
+                targetVector.y = Input.GetAxisRaw("Vertical");
+            }
         }
     }
 
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + targetVector * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(StartTimer());
+    }
+
+    IEnumerator StartTimer()
+    {
+        yield return new WaitForSeconds(2f);
+        isStarted = true;
+    }
+
+    private void OnDisable()
+    {
+        isStarted = false;
     }
 }
