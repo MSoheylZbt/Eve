@@ -46,6 +46,7 @@ public class ProgressManager : MonoBehaviour
 
         if (currentIndex >= pinklies.Count)
         {
+            print("End Button True");
             endButton.gameObject.SetActive(true);
             return;
         }

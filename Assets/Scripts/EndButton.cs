@@ -25,6 +25,8 @@ public class EndButton : MonoBehaviour
     [SerializeField] Animator levelAnimator;
     [SerializeField] Animator nextLevelAnimator;
 
+    [SerializeField] BG_Manager bG_Manager;
+
 
     private void Start()
     {
@@ -40,6 +42,8 @@ public class EndButton : MonoBehaviour
             StartCoroutine(BlockFade());
             levelAnimator.SetTrigger("Out");
             if (!isDepressed) nextLevelAnimator.SetTrigger("In");
+
+            bG_Manager.PlayNextMusic();
         }
     }
 
