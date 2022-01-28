@@ -6,10 +6,12 @@ using UnityEngine;
 public class DenialWall : MonoBehaviour
 {
     Animator animator;
+    AudioSource audioSource;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,6 +19,7 @@ public class DenialWall : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             animator.SetTrigger("FadeOut");
+            audioSource.PlayOneShot(audioSource.clip);
         }
     }
 

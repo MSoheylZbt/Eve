@@ -12,10 +12,12 @@ public class BargainWall : MonoBehaviour
 
     Rigidbody2D rb;
     PlayerController playerRef;
+    AudioSource audioSource;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -35,7 +37,8 @@ public class BargainWall : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(!playerRef)
+            audioSource.PlayOneShot(audioSource.clip);
+            if (!playerRef)
             {
                 playerRef = collision.GetComponent<PlayerController>();
             }

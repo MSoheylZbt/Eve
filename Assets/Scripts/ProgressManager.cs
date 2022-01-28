@@ -14,6 +14,7 @@ public class ProgressManager : MonoBehaviour
 
     
     int currentIndex = 0;
+    AudioSource audioSource;
 
     
 
@@ -29,6 +30,8 @@ public class ProgressManager : MonoBehaviour
         {
             temp.SetManagerRef(this);
         }
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void DoProgress()
@@ -41,6 +44,7 @@ public class ProgressManager : MonoBehaviour
     private void ActiveNextPinkly()
     {
         pinklies[currentIndex].gameObject.SetActive(false);
+        audioSource.PlayOneShot(audioSource.clip);
 
         currentIndex++; //Side-effect
 

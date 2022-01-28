@@ -13,7 +13,13 @@ public class AngerWall : MonoBehaviour
     int hitCounter = 0;
 
     Rigidbody2D playerRB;
+    AudioSource audioSource;
 
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -42,6 +48,7 @@ public class AngerWall : MonoBehaviour
         {
             hitCounter++;
             isHitted = true;
+            audioSource.PlayOneShot(audioSource.clip);
         }
 
         if(hitCounter == hitCount)

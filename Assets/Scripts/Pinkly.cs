@@ -6,6 +6,7 @@ public class Pinkly : MonoBehaviour
 {
     ProgressManager managerRef;
 
+
     public void SetManagerRef(ProgressManager manager)
     {
         managerRef = manager;
@@ -14,6 +15,9 @@ public class Pinkly : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
+        {
             managerRef.DoProgress();
+        }
+            
     }
 }
