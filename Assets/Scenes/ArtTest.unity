@@ -2409,7 +2409,7 @@ PrefabInstance:
     - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
       propertyPath: dialogueSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 16efa4c3dfd010049b1c907b239e9b5f, type: 3}
+      objectReference: {fileID: 21300000, guid: 5797586825cee454bae7d109bb96ecaa, type: 3}
     - target: {fileID: 7341097360385004746, guid: ade37a7b4ec245d479044990b830668f, type: 3}
       propertyPath: m_RootOrder
       value: 5
