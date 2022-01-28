@@ -9329,6 +9329,7 @@ GameObject:
   - component: {fileID: 3492069884258092211}
   - component: {fileID: 8356562517752327191}
   - component: {fileID: 3914852464016700368}
+  - component: {fileID: 3914852464016700369}
   m_Layer: 0
   m_Name: Multiple Click Wall (1)
   m_TagString: Untagged
@@ -9432,6 +9433,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3914852464016700369
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914852464016700367}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be168098223d09b46a57ec3c89cd0d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3914852464187986939
 Transform:
   m_ObjectHideFlags: 0
@@ -9511,6 +9531,7 @@ GameObject:
   - component: {fileID: 3492069884361237635}
   - component: {fileID: 8356562517648165927}
   - component: {fileID: 3914852464187986944}
+  - component: {fileID: 3914852464187986945}
   m_Layer: 0
   m_Name: Multiple Click Wall (7)
   m_TagString: Untagged
@@ -9614,6 +9635,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3914852464187986945
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914852464187986943}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be168098223d09b46a57ec3c89cd0d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3914852464402693793
 Transform:
   m_ObjectHideFlags: 0
@@ -9640,6 +9680,7 @@ GameObject:
   - component: {fileID: 3914852464402693798}
   - component: {fileID: 8629728427036989023}
   - component: {fileID: 3492069884140243417}
+  - component: {fileID: 3914852464402693800}
   - component: {fileID: 8356562517332812157}
   - component: {fileID: 3914852464402693799}
   m_Layer: 0
@@ -9796,6 +9837,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3914852464402693800
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914852464402693797}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be168098223d09b46a57ec3c89cd0d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3914852465125536266
 Transform:
   m_ObjectHideFlags: 0
@@ -9875,6 +9935,7 @@ GameObject:
   - component: {fileID: 3492069883151287666}
   - component: {fileID: 8356562518858083798}
   - component: {fileID: 3914852465125536271}
+  - component: {fileID: 3914852465125536272}
   m_Layer: 0
   m_Name: Multiple Click Wall (8)
   m_TagString: Untagged
@@ -9978,6 +10039,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3914852465125536272
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914852465125536270}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be168098223d09b46a57ec3c89cd0d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3914852465189788434
 Transform:
   m_ObjectHideFlags: 0
@@ -10057,6 +10137,7 @@ GameObject:
   - component: {fileID: 3492069883091299434}
   - component: {fileID: 8356562518785426638}
   - component: {fileID: 3914852465189788439}
+  - component: {fileID: 3914852465189788440}
   m_Layer: 0
   m_Name: Multiple Click Wall (5)
   m_TagString: Untagged
@@ -10160,6 +10241,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3914852465189788440
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914852465189788438}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be168098223d09b46a57ec3c89cd0d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &3914852465921027817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10225,6 +10325,7 @@ GameObject:
   - component: {fileID: 3492069883427215766}
   - component: {fileID: 8356562518045847858}
   - component: {fileID: 3914852465921027819}
+  - component: {fileID: 3914852465921027820}
   m_Layer: 0
   m_Name: Multiple Click Wall (2)
   m_TagString: Untagged
@@ -10328,6 +10429,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3914852465921027820
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914852465921027818}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be168098223d09b46a57ec3c89cd0d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3914852465921027822
 Transform:
   m_ObjectHideFlags: 0
@@ -10421,6 +10541,7 @@ GameObject:
   - component: {fileID: 3492069883613630258}
   - component: {fileID: 8356562517858903958}
   - component: {fileID: 3914852466007308367}
+  - component: {fileID: 3914852466007308368}
   m_Layer: 0
   m_Name: Multiple Click Wall (6)
   m_TagString: Untagged
@@ -10524,6 +10645,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3914852466007308368
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914852466007308366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be168098223d09b46a57ec3c89cd0d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3914852466114142064
 Transform:
   m_ObjectHideFlags: 0
@@ -10552,6 +10692,7 @@ GameObject:
   - component: {fileID: 3492069883502897160}
   - component: {fileID: 8356562517835907244}
   - component: {fileID: 3914852466114142069}
+  - component: {fileID: 3914852466114142070}
   m_Layer: 0
   m_Name: Multiple Click Wall (4)
   m_TagString: Untagged
@@ -10655,6 +10796,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3914852466114142070
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914852466114142068}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be168098223d09b46a57ec3c89cd0d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &3914852466114142071
 SpriteRenderer:
   m_ObjectHideFlags: 0

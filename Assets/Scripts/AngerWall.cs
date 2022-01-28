@@ -14,11 +14,13 @@ public class AngerWall : MonoBehaviour
 
     Rigidbody2D playerRB;
     AudioSource audioSource;
+    private Animator animator;
 
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,13 +49,13 @@ public class AngerWall : MonoBehaviour
         if(collision.gameObject.CompareTag("Player") && isInside)
         {
             hitCounter++;
+            animator.SetInteger("Hit", hitCounter);
             isHitted = true;
             audioSource.PlayOneShot(audioSource.clip);
         }
-
         if(hitCounter == hitCount)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 
