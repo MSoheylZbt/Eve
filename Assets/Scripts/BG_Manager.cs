@@ -21,7 +21,7 @@ public class BG_Manager : MonoBehaviour
         audioSource.Pause();
         currentIndex++;
 
-        if (currentIndex > bgMusics.Count)
+        if (currentIndex >= bgMusics.Count)
             return;
 
         audioSource.clip = bgMusics[currentIndex];

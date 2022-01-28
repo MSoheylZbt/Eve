@@ -26,6 +26,8 @@ public class EndButton : MonoBehaviour
     [SerializeField] Animator nextLevelAnimator;
 
 
+    [SerializeField] BG_Manager bG_Manager;
+
     private void Start()
     {
         wallAnimator = wall.GetComponent<Animator>();
@@ -40,7 +42,9 @@ public class EndButton : MonoBehaviour
             if (!isDepressed) nextLevelAnimator.SetTrigger("In");
             StartCoroutine(MoveWhite());
             StartCoroutine(BlockFade());
-            
+
+
+            bG_Manager.PlayNextMusic();
         }
     }
 
