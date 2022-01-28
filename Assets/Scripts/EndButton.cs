@@ -70,6 +70,8 @@ public class EndButton : MonoBehaviour
             yield return new WaitForSeconds(2f);
             white.transform.position = new Vector3(teleportPos.position.x,teleportPos.position.y,0);
             dialogueBox.sprite = dialogueSprite;
+            levelAnimator.SetTrigger("Out");
+            nextLevelAnimator.SetTrigger("In");
         }
         Destroy(gameObject);
 
