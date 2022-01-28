@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] Animator InroAnim;
+    [SerializeField] GameObject canvas;
     public void Play()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        InroAnim.SetTrigger("In");
+        Destroy(canvas);
     }
 
     public void Quit()
