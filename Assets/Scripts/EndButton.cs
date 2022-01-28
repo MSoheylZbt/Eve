@@ -36,10 +36,11 @@ public class EndButton : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             //gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            StartCoroutine(MoveWhite());
-            StartCoroutine(BlockFade());
             levelAnimator.SetTrigger("Out");
             if (!isDepressed) nextLevelAnimator.SetTrigger("In");
+            StartCoroutine(MoveWhite());
+            StartCoroutine(BlockFade());
+            
         }
     }
 
