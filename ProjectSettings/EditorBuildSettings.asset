@@ -9,15 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GraveScene.unity
     guid: 5684d98f8daef874fb71cf129f176cfd
   - enabled: 1
-    path: Assets/Scenes/Denial_Scene.unity
-    guid: 37fb1914f74444940a0eb0481f6df4e6
-  - enabled: 1
-    path: Assets/Scenes/Anger_Scene.unity
-    guid: 6d30c97e314ee5244a8af556189c5cc6
-  - enabled: 1
-    path: Assets/Scenes/Bargaining_Scene.unity
-    guid: 635ade295217ad347b160f2e03ea23f4
-  - enabled: 1
-    path: Assets/Scenes/Depression_Scene.unity
-    guid: 43af4d167d08b6d4b8b1b4e537a07782
+    path: Assets/Scenes/ArtTest.unity
+    guid: 896bb5fd85173bd4891f01b7b614bec5
   m_configObjects: {}
