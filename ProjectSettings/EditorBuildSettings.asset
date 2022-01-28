@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ArtTest.unity
     guid: 896bb5fd85173bd4891f01b7b614bec5
+  - enabled: 1
+    path: "Assets/Scenes/GraveScene \u0651Final.unity"
+    guid: e6749abfb5726fc489dc5c48fc336b00
   m_configObjects: {}
