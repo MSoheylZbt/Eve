@@ -25,8 +25,6 @@ public class EndButton : MonoBehaviour
     [SerializeField] Animator levelAnimator;
     [SerializeField] Animator nextLevelAnimator;
 
-    [SerializeField] BG_Manager bG_Manager;
-
 
     private void Start()
     {
@@ -37,13 +35,12 @@ public class EndButton : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            StartCoroutine(MoveWhite());
-            StartCoroutine(BlockFade());
+            gameObject.GetComponent<Animator>().SetTrigger("Out");
             levelAnimator.SetTrigger("Out");
             if (!isDepressed) nextLevelAnimator.SetTrigger("In");
-
-            bG_Manager.PlayNextMusic();
+            StartCoroutine(MoveWhite());
+            StartCoroutine(BlockFade());
+            
         }
     }
 
@@ -61,7 +58,7 @@ public class EndButton : MonoBehaviour
             white.transform.position = Vector2.MoveTowards(white.transform.position, whiteNextPos.transform.position, whiteMoveSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
-       
+        Destroy(gameObject);
 
         if (isDepressed)
         {
