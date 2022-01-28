@@ -17,8 +17,13 @@ public class BG_Manager : MonoBehaviour
 
     public void PlayNextMusic()
     {
+
         audioSource.Pause();
         currentIndex++;
+
+        if (currentIndex > bgMusics.Count)
+            return;
+
         audioSource.clip = bgMusics[currentIndex];
         audioSource.Play();
     }

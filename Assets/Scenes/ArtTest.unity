@@ -1227,6 +1227,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1507494260}
     - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
+      propertyPath: bG_Manager
+      value: 
+      objectReference: {fileID: 1388429922}
+    - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
       propertyPath: whiteNextPos
       value: 
       objectReference: {fileID: 620429013}
@@ -2340,6 +2344,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1507494260}
     - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
+      propertyPath: bG_Manager
+      value: 
+      objectReference: {fileID: 1388429922}
+    - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 880824312}
@@ -2456,6 +2464,10 @@ PrefabInstance:
       propertyPath: white
       value: 
       objectReference: {fileID: 1507494260}
+    - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
+      propertyPath: bG_Manager
+      value: 
+      objectReference: {fileID: 1388429922}
     - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
       propertyPath: whiteNextPos
       value: 
@@ -3206,7 +3218,7 @@ AudioSource:
   m_GameObject: {fileID: 1388429920}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3100181245180621567, guid: ace7fd26b2f43cf48bec1f5c1bb43aed, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -3521,6 +3533,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40eacd4a28a2f6b4dbbdeef06623ec4e, type: 3}
+--- !u!114 &1519450666 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
+  m_PrefabInstance: {fileID: 1050446727}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d82767076ca5b45ba44ef72044c633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1532147155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7341097360385004746, guid: ade37a7b4ec245d479044990b830668f, type: 3}
@@ -3788,6 +3811,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1507494260}
     - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
+      propertyPath: bG_Manager
+      value: 
+      objectReference: {fileID: 1388429922}
+    - target: {fileID: 8256633, guid: ade37a7b4ec245d479044990b830668f, type: 3}
       propertyPath: whiteNextPos
       value: 
       objectReference: {fileID: 1404523097}
@@ -3957,6 +3984,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3561873511988064081}
     m_Modifications:
+    - target: {fileID: 4043589034815343362, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.55
+      objectReference: {fileID: 0}
     - target: {fileID: 4043589036156867688, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
       propertyPath: m_Name
       value: Black
@@ -4574,7 +4605,11 @@ PrefabInstance:
     - target: {fileID: 4043589036156867702, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
       propertyPath: endButton
       value: 
-      objectReference: {fileID: 154932024}
+      objectReference: {fileID: 1519450666}
+    - target: {fileID: 4043589036156867702, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
+      propertyPath: dialogueTimer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4043589036156867702, guid: cc0a8f7aa6084cf4f826bd7e7fed953c, type: 3}
       propertyPath: pinklies.Array.size
       value: 3
