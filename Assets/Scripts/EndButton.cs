@@ -38,8 +38,11 @@ public class EndButton : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             gameObject.GetComponent<Animator>().SetTrigger("Out");
-            levelAnimator.SetTrigger("Out");
-            if (!isDepressed) nextLevelAnimator.SetTrigger("In");
+            if (!isDepressed)
+            {
+                levelAnimator.SetTrigger("Out");
+                nextLevelAnimator.SetTrigger("In");
+            }
             StartCoroutine(MoveWhite());
             StartCoroutine(BlockFade());
 
@@ -62,19 +65,13 @@ public class EndButton : MonoBehaviour
             white.transform.position = Vector2.MoveTowards(white.transform.position, whiteNextPos.transform.position, whiteMoveSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
-        Destroy(gameObject);
-
         if (isDepressed)
         {
             yield return new WaitForSeconds(2f);
             white.transform.position = new Vector3(teleportPos.position.x,teleportPos.position.y,0);
             dialogueBox.sprite = dialogueSprite;
         }
-        else
-        {
-            
-            //SceneManager.LoadScene(nextSceneIndex);
-        }
+        Destroy(gameObject);
 
     }
 }
