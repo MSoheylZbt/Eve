@@ -9,8 +9,11 @@ public class AngerWall : MonoBehaviour
     [SerializeField] float forceMultiplier = 20f;
 
     bool isInside = false;
+    bool isHitted = false;
     int hitCounter = 0;
+
     Rigidbody2D playerRB;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,7 +30,10 @@ public class AngerWall : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
+        {
             isInside = false;
+            isHitted = false;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -35,9 +41,7 @@ public class AngerWall : MonoBehaviour
         if(collision.gameObject.CompareTag("Player") && isInside)
         {
             hitCounter++;
-            isInside = false;
-            //Vector2 forceDir = this.transform.position - collision.gameObject.transform.position;
-            playerRB.AddForce(transform.forward * forceMultiplier);
+            isHitted = true;
         }
 
         if(hitCounter == hitCount)
@@ -46,4 +50,9 @@ public class AngerWall : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if(playerRB && isHitted)
+            playerRB.AddForce(this.transform.up  * forceMultiplier);
+    }
 }

@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -206,8 +206,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 0.23078808
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -249,6 +249,6 @@ MonoBehaviour:
   dialogueSprites:
   - {fileID: 21300000, guid: 0e2487a26763472428603f27820d059d, type: 3}
   - {fileID: 21300000, guid: 6936035a0d349ba4cafdacddee695e90, type: 3}
-  levelPrefabs: []
+  endButton: {fileID: 0}
   dialoguBox: {fileID: 4043589034815343361}
-  dialogueTimer: 2
+  dialogueTimer: 5
