@@ -37,7 +37,9 @@ public class BargainWall : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            audioSource.PlayOneShot(audioSource.clip);
+            if(audioSource.isPlaying == false)
+                audioSource.PlayOneShot(audioSource.clip);
+
             if (!playerRef)
             {
                 playerRef = collision.GetComponent<PlayerController>();
