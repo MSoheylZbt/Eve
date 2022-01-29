@@ -13,11 +13,13 @@ public class BargainWall : MonoBehaviour
     Rigidbody2D rb;
     PlayerController playerRef;
     AudioSource audioSource;
+    BoxCollider2D boxCollider;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void Update()
@@ -37,13 +39,12 @@ public class BargainWall : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(!playerRef)
+            if (!playerRef)
             {
                 playerRef = collision.GetComponent<PlayerController>();
                 audioSource.PlayOneShot(audioSource.clip);
             }
-
-            playerRef.enabled = false;
+            boxCollider.enabled = false;
             isInside = true;
         }
     }
@@ -52,12 +53,12 @@ public class BargainWall : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(!playerRef)
+            if (!playerRef)
             {
                 playerRef = collision.GetComponent<PlayerController>();
             }
 
-            playerRef.enabled = true;
+            boxCollider.enabled = true;
             isInside = false;
         }
     }

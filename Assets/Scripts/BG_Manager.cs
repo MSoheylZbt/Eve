@@ -6,7 +6,7 @@ public class BG_Manager : MonoBehaviour
 {
     [SerializeField] List<AudioClip> bgMusics;
     AudioSource audioSource;
-    int currentIndex = 0;
+    public int currentIndex = 0;
 
     private void Awake()
     {
@@ -16,14 +16,10 @@ public class BG_Manager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.clip = bgMusics[currentIndex];
-        if(audioSource.isPlaying == false)
-            audioSource.Play();
     }
 
     public void PlayNextMusic()
     {
-        audioSource.Pause();
         currentIndex++;
 
         if (currentIndex >= bgMusics.Count)
